@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Data Ecosystems</title>
+  <meta name="description" content="Some papers and technical reports about data commons and data ecosystems.">
+
+  <link rel="stylesheet" href="assets/main.css">
+  <link rel="canonical" href="http://rgrossman.com/">
+  <link rel="alternate" type="application/rss+xml" title="Robert L. Grossman" href="/feed.xml">
+
+</head>
+
+<body>
+
+   <header class="site-header" role="banner">
+
+  <div class="wrapper">
+    
+    
+    <a class="site-title" href="/">Robert L. Grossman</a>
+  
+    
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          
+
+          
+            <a class="page-link" href="http://rgrossman.com/about.html">About</a>
+            
+            <a class="page-link" href="http://rgrossman.com/blog.html">Blog</a>
+            
+            <a class="page-link" href="http://rgrossman.com/books.html">Books</a>
+            
+            <a class="page-link" href="http://rgrossman.com/ctds.html">CTDS</a>
+          
+            <a class="page-link" href="http://rgrossman.com/jobs.html">Jobs</a>
+            
+            <a class="page-link" href="http://rgrossman.com/more.html">More</a>
+            
+            <a class="page-link" href="http://rgrossman.com/papers.html">Papers</a>
+            
+            <a class="page-link" href="http://rgrossman.com/talks.html">Talks</a>
+            
+            
+          
+        </div>
+      </nav>
+    
+  </div>
+</header>
+
+
+
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="home">
+
+	  <h2>Data Commons, Data Meshes, and Mesh Services </h2>
+
+<p>We begin with some definitions. </p>
+
+<p>A <b>data commons</b> is a cloud-based data platform along with a governance framework that together allow a community to manage, analyze and share its data.</p>
+
+	  <p>A <b> data ecosystem</b> contains multiple data commons, data repositories, cloud computing resources, knowledgebases, and other cloud-based applications that can interoperate using a common set of services (called framework or <b>mesh services</b>) for authentication, authorization, accessing, and other core services.</p>
+
+<p>Although most data commons use public clouds, a data commons or data ecosystem must use public, on-premise or hybrid clouds.</p>
+
+<h2>Data Commons</h2>
+
+
+
+<p>The paper below is a short commentary summarizing ten lessons learned over the past decade building data commons. In particular, it emphasizes the importantance of i) focusing the data commons on a specific research community and the research problems they are interested in; ii) curating the data in a commons using one (or more) data models); iii) harmonizing the data using a common set of bioinformatics pipelines; and, iv) processing the data to produce derived data of interest and providing the software tools and applications needed to explore and analyze the data. </p>
+
+<ul>
+<p><li>
+Grossman, Robert L. Ten lessons for data sharing with a data commons. Scientific Data 10, no. 1 (2023): 120.
+<a href="https://papers.rgrossman.com/journal-094.pdf">pdf </a>
+</li></p>
+</ul>
+
+
+ <p><b>GDC.</b>The NCI Genomic Data Commons is a widely used data commons containing cancer genomics data and associated clinical, imaging and other data.  It is used by over 60,000 researchers each month and it distributed over 2 PB of data in an average month. Here are some papers describing it. </p>
+	  
+
+<ul>
+<p><li>
+Heath AP, Ferretti V, ... and Grossman RL, The NCI Genomic Data Commons, Nature Genetics 2021 Mar;53(3):257-262. PMID: 33619384 doi: 10.1038/s41588-021-00791-5. PMID: 33619384 
+<a href="https://papers.rgrossman.com/journal-080.pdf">pdf </a>
+</li></p>
+
+
+<p><li>
+Zhenyu Zhang, Kyle Hernandez, Jeremiah Savage, Shenglai Li, Dan Miller, Stuti Agrawal, Francisco Ortuno, Louis M. Staudt, Allison Heath, and Robert L. Grossman, Uniform genomic data analysis in the NCI Genomic Data Commons, Nature communications 12, no. 1 (2021), pages 1-11. PMID: 33619257 doi: 10.1038/s41467-021-21254-9.
+<a href="https://papers.rgrossman.com/journal-081.pdf">pdf</a>
+</li></p>
+
+<p><li>
+    Shane Wilson, Michael Fitzsimons, Martin Ferguson, ..., Robert L. Grossman, Developing Cancer Informatics Applications and Tools Using the NCI Genomic Data Commons API, Cancer Research, volume 77, number 21, 2017, pages e15-e18. 
+<a href="https://papers.rgrossman.com/journal-065.pdf">pdf </a>    
+</li></p>
+
+<p><li>
+Robert L. Grossman, Allison P. Heath, Vincent Ferretti, Harold E. Varmus, Douglas R. Lowy, Warren A. Kibbe, and Louis M. Staudt, Toward a Shared Vision for Cancer Genomic Data, New England Journal of Medicine, September 22, 2016, Volume 375, Number 12, pages 1109-12. 
+<a href="https://papers.rgrossman.com/journal-057.pdf">pdf </a>
+</li></p>
+
+
+</ul>
+
+
+<p><b>Other data commons.</b> Here are some papers about other data commons.
+
+<ul>
+
+
+<p><li>Robert L. Grossman, Jonathan R. Dry, Sean E. Hanlon, Donald J. Johann, Anand Kolatkar, Jerry SH Lee, Christopher Meyer, Lea Salvatore, Walt Wells, and Lauren Leiman, BloodPAC Data Commons for liquid biopsy data, JCO Clinical Cancer Informatics Volume 5, 2021, pages 479-486. PMID: 33929890  DOI: 10.1200/CCI.20.00179
+<a href="https://papers.rgrossman.com/journal-082.pdf">pdf </a>
+</li></p>
+
+
+<p><li>
+Danne C. Elbers, Nathanael R. Fillmore, Feng-Chi Sung, Spyridon
+S. Ganas, Andrew Prokhorenkov, Christopher Meyer, Robert B. Hall,
+Samuel J. Ajjarapu, Daniel C. Chen, Frank Meng, Robert L. Grossman,
+Mary T. Brophy, and Nhan V. Do, The Veterans Affairs Precision
+Oncology Data Repository, a Clinical, Genomic, and Imaging Research
+Database,  Patterns Volume 1 (2020) 100083.
+DOI: 10.1016/j.patter.2020.100083
+<a href="https://papers.rgrossman.com/journal-078.pdf">pdf </a>
+</li></p>
+
+<p><li>
+Trunnell, Matthew, Casey Frankenberger, Bala Hota, Troy Hughes, Plamen Martinov, Urmila Ravichandran, Nirav S. Shah, Robert L. Grossman, and Pandemic Response Commons Consortium. "The Pandemic Response Commons." medRxiv (2022).   <a href="https://doi.org/10.1101/2022.06.20.22276542">doi</a>.
+</li></p>    
+
+</ul> 
+
+
+	  <h2>Data Ecosystems</h2>
+
+<p>The Biomedical Research Hub (BRH) is a data ecosystem spanning over eight data commons that provides workspaces, privacy preserving record linkage and other services for working with data from 2 or more data commons.</p>
+	  <ul>
+<p><li>
+Craig Barnes, Binam Bajracharya, Matthew Cannalte, Zakir Gowani, Will Haley, Taha Kass-Hout, Kyle Hernandez, Michael Ingram, Hara Prasad Juvvala, Gina Kuffel, Plamen Martinov, J. Montgomery Maxwell, John McCann, Ankit Malhotra, Noah Metoki-Shlubsky, Chris Meyer, Andre Paredes, Jawad Qureshi, Xenia Ritter, L. Philip Schumm, Mingfei Shao, Urvi Sheth, Trevar Simmons, Alexander VanTol, Zhenyu Zhang, and Robert L. Grossman, The Biomedical Research Hub: A Federated Platform for Patient Research Data, Journal of the American Medical Informatics Association, 2021,  doi:10.1093/jamia/ocab247.
+<a href="https://papers.rgrossman.com/journal-084.pdf">pdf </a>
+</li></p>
+
+</ul>  
+
+
+ 
+	  <h2>The End-to-End Design Principle for Data Ecosystems</h2>
+	  
+	  <p>This section is based on a Medium post that I wrote in 2018 advocating an architecture for data commons and data ecoystems that keeps the core system relatively simple, but supports a rich ecosystem of applications for curating, harmonizing and sharing data that is submitted to the ecoystem and for exploring, integrating, and analyzing the data by researchers using the ecoystem. </p>
+
+
+	  <p>In an influential 1984 paper called "End-to-end arguments in systems design," Jerome Saltzer, David Reed and David Clark (<a href="https://web.mit.edu/Saltzer/www/publications/endtoend/endtoend.pdf">pdf</a>) argued for using <em>as few software services</em> as possible when building large complex distributed systems. </p>
+
+<p>This is one of the main principles in the design of the Internet.  It states that network features should be implemented as close to the end points of the network -- the applications -- as possible. This is commonly expressed by describing the system as a "dumb" network with "smart" applications at the endpoints. What this means in practice is that as new innovative applications are developed for creating new types of content (one "end") and for giving viewers access to the content (the other "end"), the intermediate routers and switches do not need to be updated. A good example is provided by streaming media,  which was a new type of content that required new types of applications, but did not require any changes to the core routers and switches that support the internet. </p>
+	  
+	  <p><b>Narrow middle architecture.</b> Applying this principle to data commons and data ecosystems gives an architecture that I call the <b>narrow middle</b> architecture.   With this approach, the fewest possible services are used for the core of the system ("the narrow middle") and only these services are standardized. With this architecture, the importing, curation and integration services for getting data into the commons (one "end") and the data exploration, analysis and collaboration services for getting knowledge out of the commons (the other "end") are not standardized, but instead are the focus of different competing and innovative efforts until the community begins to recognize and adopt approaches that seem to be most effective. See Figure 1. </p>
+
+<p>It's important to note that all the services required to make data FAIR and all the services to access the structured data in data commons and data repositories are part of the core are part of the narrow middle mesh services. </p>	  
+
+<p>
+<img      src="narrow-middle-arch.webp"
+     alt="The narrow middle architecture for data commons and data ecosystems."
+width="100%" height="automatic">
+</p><p>
+Figure 1. The narrow middle architecture for data commons and data ecosystems.
+</p>
+
+
+<!--	  <p><b>The principle of avoiding premature standardization.</b> I find it helpful to think of standardization along a temporal spectrum. One end of the spectrum is when well accepted interfaces and specifications are standardized. The other end of the spectrum is when an organization or group develops a new standard to encourage the emergence of a new community. The difference is how many implementations are available, how long have they been used, and how widely adopted they are. The critical question is when in the lifecycle of a technology is the appropriate time to standardize? If too early, innovation is put a risk or the standard is likely to be ignored; if too late, the overall benefit is less. </p> -->
+
+	  
+<p>An important question to ask is: <em> what are the smallest number of software services that can be used to be flexible, extensible, distributed data ecosystems?</em></p>
+
+	  <p>I advocated in my 2018 Medium post, and this still seems reasonable today five years later< that you can build data commmons and data ecosystems with just a handful of services.</p>
+
+	  
+<p><b>Core data mesh services.</b></p>
+<ol>
+<li><b>Persistent Digital IDs</b>, which given a globally unique ID (GUID) return the one or more locations that contain the corresponding data object. We assume that the underlying data objects comprising datasets of interest are stored in public and private clouds that are accessible through S3-compatible APIs.</li>
+<li><b>A metadata service,</b> which given a GUID returns a core set of metadata.</li>
+<li><b>Authentication and authorization services,</b> which enable the authentication of users and also can determine whether a given authenticated user is authorized to see a particular dataset. In this category, I also include the associated security and compliance services. </li>
+<li><b>Data model services</b> for defining a data model, and for validating, submitting and querying data with respect to this data model.</li>
+</ol>
+
+More details of the narrow middle architecture for data commons and data ecosystems can be found in the Medium post:
+
+<ul>
+<p><li> Robert Grossman, A Proposed End-To-End Principle for Data Commons, July 6, 2018, Medium, <a href=" https://medium.com/@rgrossman1/a-proposed-end-to-end-principle-for-data-commons-5872f2fa8a47">link</a>. </li></p>
+</ul>
+
+<h2>Building Data Commons and Data Meshes with Gen3</h2>
+
+    <p><a href="https://gen3.org">Gen3</a> is an open source data platform that supports:
+      <ul>
+	<li>data commons</li>
+	<li>data ecosystems (aka data meshes)</li>
+	<li>data mesh services for building data commons and data meshes</li>
+	<li>workspaces over data commons and data meshes</li>
+	</ul>
+Gen3 has been used to build over two data commons and data meshes.</p>	  
+
+<p>You can found out more about Gen3 on the <a href="https://gen3.org">Gen3 homepage</a>. </p>
+
+
+
+     </div>
+     </div>
+    </main>
+
+
+   <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Robert L. Grossman</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            
+              Robert L. Grossman
+            
+            </li>
+            
+            <li><a href="mailto:robert dot grossman at uchicago.edu">robert dot grossman at uchicago.edu</a></li>
+            
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+          <li>
+
+
+   <a href="https://twitter.com/BobGrossman"><span class="icon icon--twitter"><svg viewBox="0 0 16 16" width="16px" height="16px"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">BobGrossman</span></a>
+
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>I&#39;m a data scientist who has been working with predictive analytics, AI and big data since 1988. </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+    
+
+</body>
+</html>
+
+
+
+
+
+
