@@ -198,19 +198,43 @@ Figure 1. The narrow middle architecture for data commons and data ecosystems.
 	  
 <p><b>Core data mesh services.</b></p>
 <ol>
-<li><b>Persistent Digital IDs</b>, which given a globally unique ID (GUID) return the one or more locations that contain the corresponding data object. We assume that the underlying data objects comprising datasets of interest are stored in public and private clouds that are accessible through S3-compatible APIs.</li>
-<li><b>A metadata service,</b> which given a GUID returns a core set of metadata.</li>
-<li><b>Authentication and authorization services,</b> which enable the authentication of users and also can determine whether a given authenticated user is authorized to see a particular dataset. In this category, I also include the associated security and compliance services. </li>
-<li><b>Data model services</b> for defining a data model, and for validating, submitting and querying data with respect to this data model.</li>
+
+<p><li><b>Persistent Digital IDs</b>, which given a globally unique ID (GUID) return the one or more locations that contain the corresponding data object. We assume that the underlying data objects comprising datasets of interest are stored in public and private clouds that are accessible through S3-compatible APIs.</li></p>
+
+<p><li><b>A metadata service,</b> which given a GUID returns a core set of metadata.</li></p>
+
+<p><li><b>Authentication and authorization services,</b> which enable the authentication of users and also can determine whether a given authenticated user is authorized to see a particular dataset. </li></p>
+
+<!--    In this category, I also include the associated security and compliance services. --> 
+
+<p><li><b>Servies to support structured data.</b> for defining a data model, and for validating, submitting and querying data with respect to this data model.</li></p>
+
 </ol>
 
-More details of the narrow middle architecture for data commons and data ecosystems can be found in the Medium post:
+<p>The first three services are sufficient to build a data lake of FAIR data objects and FAIR semistructured data that can be accessed by applications.  The last service also supports structured data. </p>
+
+<p>More details of the narrow middle architecture for data commons and data ecosystems can be found in the Medium post:
+</p>
 
 <ul>
 <p><li> Robert Grossman, A Proposed End-To-End Principle for Data Commons, July 6, 2018, Medium, <a href=" https://medium.com/@rgrossman1/a-proposed-end-to-end-principle-for-data-commons-5872f2fa8a47">link</a>. </li></p>
 </ul>
 
-<h2>Building Data Commons and Data Meshes with Gen3</h2>
+
+<h2>Standards </h2>
+
+The Global Alliance for Genomics and Health (<a href="https://www.ga4gh.org/">GA4GH</a>) has created a number of standards, including DRS for accessing cloud-based data objects and visas and passports for providing authorization information about data that provide standards for specifying the four data mesh services above.
+
+<ul>
+<p><li>
+Rehm, Heidi L., Angela JH Page, Lindsay Smith, Jeremy B. Adams, Gil Alterovitz, Lawrence J. Babb, Maxmillian P. Barkley et al., GA4GH: International policies and standards for data sharing across genomic research and healthcare, Cell Genomics 1, no. 2, 2021, 100029.  
+<a href="https://www.cell.com/cell-genomics/pdf/S2666-979X(21)00036-7.pdf">pdf</a>
+</li></p>
+
+</ul>
+
+
+<h2>Gen3 - Open Source Software for Data Commons and Data Meshes</h2>
 
     <p><a href="https://gen3.org">Gen3</a> is an open source data platform that supports:
       <ul>
@@ -219,9 +243,47 @@ More details of the narrow middle architecture for data commons and data ecosyst
 	<li>data mesh services for building data commons and data meshes</li>
 	<li>workspaces over data commons and data meshes</li>
 	</ul>
-Gen3 has been used to build over two data commons and data meshes.</p>	  
+Gen3 has been used to build over twenty data commons and data meshes that in aggregate create a data ecosystem containing over 1.7 million subjects, 50 million data objects, and 17 PB of data.</p>	  
 
 <p>You can found out more about Gen3 on the <a href="https://gen3.org">Gen3 homepage</a>. </p>
+
+
+<h2>Setting Up and Operating Data Commons and Data Meshes </h2>
+
+<p>The open source Gen3 services to build and operate Gen3 data commons and data meshes are designed to work with Kubernetes so that they can be deployed in a cloud-agnostic fashion. <p>  
+
+<p>The Gen3 services and componets have recently been moved to Helm charts to make setting up the Gen3 services easier (not all the components have Gen3 have been moved to Helm charts yet, but this migration should be over in CY 2023).  This makes it easy to bring up Gen3 on your laptop or in a virtual machine so that you can have personal deployments or lab-scale deployments, in addition to the larger Kubernetes scale deployments. </p>
+
+	  <p><b>Commons Services Operations Centers (CSOC).</b>  Just as there are security operations centers (SOCs) and network operations centers (NOCs), you can set up a Commons Services Operations Center (CSOC) to set up, operate, and monitor the data mesh services required for data commons and data ecosystems, as well as the data commons and data ecosystems themselves. 
+Typically, the CSOC also provides the security and compliance required for the commons and ecosystems.</p>
+
+<p>Several organizations have set up CSOCs, including the Center for Translational Data Science at the University of Chicago, the not-for-profit Open Commons Consortium, the Australian BioCommons, and Bristol Myers Squibb. </p>
+
+<p>Also, work is underway to develop Gen3 as a Service, so you can have a self service way of bringing up an entire Gen3 commons or ecosystem.  This can also be done in a collaboration with a CSOC that can provide any required security and compliance. </p>
+
+
+
+<h2>Interoperating Data Commons </h2>
+
+	  <p>Another important question to consider is what are the minimal services so that two or more data commons can decide whether they can interoperate, in the sense that an authorized user in one commons can access data from another commons that he or she is authorized to access.</p>
+
+<ul>
+<p><li>
+Grossman, Robert L., Rebecca R. Boyles, Brandi N. Davis-Dusenbery, Amanda Haddock, Allison P. Heath, Brian D. O&lsquo;Connor, Adam C. Resnick, Deanne M. Taylor, and Stan Ahalt. A Framework for the Interoperability of Cloud Platforms: Towards FAIR Data in SAFE Environments. 
+<a href="https://arxiv.org/abs/2203.05097">arXiv:2203.05097</a> (2022).
+</li></p>
+
+</ul>
+
+<p>This paper introduces the following principle called SAFE for interoperating two or more data commons: "The data governance process for
+a dataset should authorize users, the platform governance process for a dataset
+should authorize cloud platform environments, and two or more cloud platforms
+can interoperate by trusting these authorizations."  SAFE is an abbreviation for Secure and Authorized FAIR Environment (SAFE).</p>
+
+
+	  
+
+	    
 
 
 
